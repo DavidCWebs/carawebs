@@ -1,8 +1,8 @@
 <?php
 
-namespace Roots\Sage\Customizer;
+namespace Carawebs\Carawebs\Customizer;
 
-use Roots\Sage\Assets;
+use Carawebs\Carawebs\Assets;
 
 /**
  * Add postMessage support

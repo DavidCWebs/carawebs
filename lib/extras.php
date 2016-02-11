@@ -1,8 +1,8 @@
 <?php
 
-namespace Roots\Sage\Extras;
+namespace Carawebs\Carawebs\Extras;
 
-use Roots\Sage\Setup;
+use Carawebs\Carawebs\Setup;
 
 /**
  * Add <body> classes

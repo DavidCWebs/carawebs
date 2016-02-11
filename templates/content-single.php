@@ -5,6 +5,7 @@
       <?php get_template_part('templates/entry-meta'); ?>
     </header>
     <div class="entry-content">
+      <?= Carawebs\Carawebs\Display\Image::featured_image( get_the_ID(), 'w800' ); ?>
       <?php the_content(); ?>
     </div>
     <footer>

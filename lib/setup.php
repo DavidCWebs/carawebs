@@ -1,8 +1,8 @@
 <?php
 
-namespace Roots\Sage\Setup;
+namespace Carawebs\Carawebs\Setup;
 
-use Roots\Sage\Assets;
+use Carawebs\Carawebs\Assets;
 
 /**
  * Theme setup
