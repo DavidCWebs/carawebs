@@ -134,6 +134,14 @@ public static function project_data_terms() {
 
   }
 
+  /**
+   * Return the registered mobile number for this site
+   *
+   * This requires the number to be set using the Carawebs Address plugin. The number is
+   * stored as `carawebs_address_data['mobile']` in the options table.
+   *
+   * @return string Mobile number
+   */
   public static function mobile_number() {
 
     $address = Fetch\Options::get_options_array( 'carawebs_address_data' );

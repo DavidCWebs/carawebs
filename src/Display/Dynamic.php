@@ -119,11 +119,38 @@ class Dynamic {
 
           break;
 
+        case 'intro':
+
+          $row_data .= $this->the_intro( $count );
+
+          break;
+
       }
 
     }
 
     echo $row_data;
+
+  }
+
+  private function the_intro( $count ) {
+
+    // Get the background styles, and build the opening tag
+    // -------------------------------------------------------------------------
+    $style          = $this->inline_style_data( $count );
+    $section_style  = $this->section_inline_style ( $style['bg_image_ID'], $style['fixed'], $style['bg_colour'], $style['text_colour'], $style['opacity'], 'intro' );
+
+    $content      = $this->flex_fieldname . '_' . $count . '_content';
+    $title        = $this->flex_fieldname . '_' . $count . '_heading';
+    $content      = apply_filters( 'the_content', get_post_meta( $this->post_ID, $content, true ) );
+    $title        = apply_filters( 'the_title', get_post_meta( $this->post_ID, $title, true ) );
+    $include_cta  = get_post_meta( $this->post_ID, $this->flex_fieldname . '_' . $count . '_cta', true );
+    $cta_intro    = get_post_meta( $this->post_ID, $this->flex_fieldname . '_' . $count . '_cta_intro', true );
+
+    ob_start();
+    //include( get_template_directory() . '/partials/frontpage-text-block.php');
+    include( get_template_directory() . '/partials/frontpage-intro-section-centred.php');
+    return ob_get_clean();
 
   }
 

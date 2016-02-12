@@ -2,6 +2,7 @@
 
 use Carawebs\Carawebs\Setup;
 use Carawebs\Carawebs\Wrapper;
+$header_type = 'static-header'; // 'static-header' or 'fixed-header'
 
 ?>
 
@@ -18,7 +19,7 @@ use Carawebs\Carawebs\Wrapper;
       do_action('get_header');
       get_template_part('templates/header');
     ?>
-    <div class="wrap container" role="document">
+    <div class="<?= $header_type; ?> wrap<?= !is_page_template( 'template-landing-page.php' ) ? ' container' : ' container-fluid'; ?>" role="document">
       <div class="content row">
         <main class="main">
           <?php include Wrapper\template_path(); ?>
