@@ -1,10 +1,10 @@
 <?php
-use Carawebs\Castleview\Extras;
+use Carawebs\Carawebs\Extras;
 $post_ID = get_the_ID();
 ?>
 <div class="col-md-4">
   <a href="<?php the_permalink(); ?>">
-    <?= Carawebs\Castleview\Display\Image::featured_image( $post_ID, 'w800' ); ?>
+    <?= Carawebs\Carawebs\Display\Image::featured_image( $post_ID, 'w800' ); ?>
   </a>
   <a href="<?php the_permalink(); ?>">
     <h3><?php the_title(); ?></h3>

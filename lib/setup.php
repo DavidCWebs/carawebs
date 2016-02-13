@@ -71,6 +71,9 @@ function widgets_init() {
     'before_title'  => '<h3>',
     'after_title'   => '</h3>'
   ]);
+
+  register_widget( 'Carawebs\Carawebs\Widgets\Services' );
+
 }
 add_action('widgets_init', __NAMESPACE__ . '\\widgets_init');
 

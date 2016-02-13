@@ -7,7 +7,7 @@
   <?= $content; ?>
   <div class="topspace">
     <?php
-    Carawebs\Castleview\Display\Helpers::click_to_call();
+    Carawebs\Carawebs\Display\Helpers::click_to_call();
     //include_once( get_template_directory() . '/partials/click-to-call.php' ); ?>
   </div>
 </div>

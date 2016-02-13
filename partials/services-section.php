@@ -19,7 +19,7 @@
       foreach( $services_data as $service ) {
 
         $permalink = $service['the_permalink'];
-        $excerpt = Carawebs\Castleview\Extras\custom_get_excerpt( $service['post_ID'] );
+        $excerpt = Carawebs\Carawebs\Extras\custom_get_excerpt( $service['post_ID'] );
         $title = $service['the_title'];
 
         ?>
@@ -32,7 +32,7 @@
                 </a>
               </div>
               <a href="<?= $permalink; ?>" title="<?= $title; ?>" class="title">
-                <?= Carawebs\Castleview\Display\Image::featured_image( $service['post_ID'], 'w800' ); ?>
+                <?= Carawebs\Carawebs\Display\Image::featured_image( $service['post_ID'], 'w800' ); ?>
               </a>
             </div>
             <a href="<?= $permalink; ?>" class="title">

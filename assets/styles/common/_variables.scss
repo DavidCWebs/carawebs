@@ -19,11 +19,13 @@ $footer-fg:                  #fff;
 // Define common padding and border radius sizes and more.
 // Values based on 14px text and 1.428 line-height (~20px to start).
 // -----------------------------------------------------------------------------
-$padding-base-vertical:     6px !default;
+$padding-base-vertical:     12px !default;
 $padding-base-horizontal:   12px !default;
 
-$padding-large-vertical:    10px !default;
+$padding-large-vertical:    24px !default;
 $padding-large-horizontal:  16px !default;
+
+$padding-xl-vertical:       48px !default;
 
 $padding-small-vertical:    5px !default;
 $padding-small-horizontal:  10px !default;

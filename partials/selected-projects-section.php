@@ -21,14 +21,14 @@ if ( ! empty( $section_style ) ) {
       foreach( $projects as $project_ID ) {
 
         $permalink  = get_the_permalink( $project_ID );
-        $excerpt    = Carawebs\Castleview\Extras\custom_get_excerpt( $project_ID );
+        $excerpt    = Carawebs\Carawebs\Extras\custom_get_excerpt( $project_ID );
         $title      = get_the_title( $project_ID );
 
         ?>
         <div class="col-md-4">
           <div class="teaser">
             <a href="<?= $permalink; ?>" title="<?= $title; ?>">
-              <?= Carawebs\Castleview\Display\Image::featured_image( $project_ID, 'w800' ); ?>
+              <?= Carawebs\Carawebs\Display\Image::featured_image( $project_ID, 'w800' ); ?>
             </a>
             <a href="<?= $permalink; ?>">
               <h3><?= $title; ?></h3>
