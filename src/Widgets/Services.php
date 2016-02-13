@@ -38,15 +38,13 @@ class Services extends \WP_Widget {
 	}
 
 	/**
-	 * Outputs the options form on admin
+	 * Outputs the options form on widget admin
 	 *
 	 * @param array $instance The widget options
 	 */
 	public function form( $instance ) {
 
-    //var_dump($instance);
-
-		// outputs the options form on admin
+    // outputs the options form on the widget admin page
 		$title = ! empty( $instance['title'] ) ? esc_attr( $instance['title'] ) : null;
     $intro = ! empty( $instance['intro'] ) ? esc_attr( $instance['intro'] ) : null;
 
@@ -61,22 +59,21 @@ class Services extends \WP_Widget {
       <label for="<?= $this->get_field_id('intro'); ?>"><?php _e('Intro:'); ?></label>
       <input class="widefat" id="<?= $this->get_field_id('intro'); ?>" name="<?php echo $this->get_field_name('intro'); ?>" type="text" value="<?php echo $intro; ?>" />
     </p>
-    <input type="hidden" name="nonce" value="<?php echo wp_create_nonce('services_nonce'); ?>"/>
-    <?php
+    <?php wp_nonce_field('nonce', 'services_nonce');
 
 	}
 
 	/**
-	 * Processing widget options on save
+	 * Process widget options on save
 	 *
 	 * @param array $new_instance The new options
 	 * @param array $old_instance The previous options
 	 */
 	public function update( $new_instance, $old_instance ) {
 
-    $formNonce = $_POST['nonce'];
+    $formNonce = $_POST['services_nonce'];
 
-    if (!wp_verify_nonce($formNonce, 'services_nonce')) {
+    if (!wp_verify_nonce($formNonce, 'nonce')) {
 
       echo json_encode(array(
         'success' => false,
