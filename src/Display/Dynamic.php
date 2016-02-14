@@ -141,7 +141,7 @@ class Dynamic {
     $section_style  = $this->section_inline_style ( $style['bg_image_ID'], $style['fixed'], $style['bg_colour'], $style['text_colour'], $style['opacity'], 'intro' );
 
     $content      = $this->flex_fieldname . '_' . $count . '_content';
-    $title        = $this->flex_fieldname . '_' . $count . '_heading';
+    $title        = $this->flex_fieldname . '_' . $count . '_title';
     $content      = apply_filters( 'the_content', get_post_meta( $this->post_ID, $content, true ) );
     $title        = apply_filters( 'the_title', get_post_meta( $this->post_ID, $title, true ) );
     $include_cta  = get_post_meta( $this->post_ID, $this->flex_fieldname . '_' . $count . '_cta', true );

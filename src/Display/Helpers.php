@@ -47,6 +47,18 @@ class Helpers {
 
   }
 
+  public static function main_CTA_shortcode() {
+
+    return self::main_CTA();
+
+  }
+
+  public static function share_this_shortcode() {
+
+    return self::share_this();
+
+  }
+
   public static function share_this() {
 
     ob_start();
