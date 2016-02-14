@@ -53,7 +53,7 @@ class Contact {
    * Return HTML for social sharing buttons - justified button group
    *
    * @param  string  $heading An optional heading for this block
-   * @return string           HTML for the social sharing buttons
+   * @return string           HTML for the social sharing buttonsAdd basic styles to buttons
    */
   public static function share_this( $heading ) {
 

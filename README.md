@@ -2,6 +2,15 @@
 [![Build Status](https://travis-ci.org/roots/sage.svg)](https://travis-ci.org/roots/sage)
 [![devDependency Status](https://david-dm.org/roots/sage/dev-status.svg)](https://david-dm.org/roots/sage#info=devDependencies)
 
+##Shortcodes
+
+###Call to Action
+The shortcode is called with `[CTA]`. Accepts parameters:
+
+* `type="email" OR type="phone"` Defaults to "phone"
+* `text="Your Text"`: If a phone CTA, this will form the click-to-call instruction at small screen sizes. If email, the text constituting the email mailto: link.
+* `prefix="Your Prefix"`: If a phone CTA, the prefix for the number at large screen sizes.
+
 Sage is a WordPress starter theme based on HTML5 Boilerplate, gulp, Bower, and Bootstrap Sass, that will help you make better themes.
 
 * Source: [https://github.com/roots/sage](https://github.com/roots/sage)
