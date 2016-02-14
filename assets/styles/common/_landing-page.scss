@@ -6,43 +6,12 @@
 
 .light-text {
 
-  color: #fff;
-
-  a {
-
-    color: #fff;
-
-  }
-
-  .btn-default {
-
-    border-color: #fff;
-
-  }
-
   h2 {
 
     color: #fff;
 
   }
-
-  .non-click-phone,
-  a.click-phone {
-
-    color: #fff;
-    @extend .btn;
-    @extend .btn-default;
-    @extend .ghost;
-    border: solid 1px #fff;
-
-    &:hover {
-
-      color: #fff;
-
-    }
-
-  }
-
+  
 }
 
 .full-width.light-text {

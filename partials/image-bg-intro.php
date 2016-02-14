@@ -20,7 +20,7 @@
           </div>
         </div>
         <!-- <div class="col-md-4 col-md-offset-2">
-          <?php echo Carawebs\Carawebs\Display\Helpers::main_CTA(); ?>
+          <?php echo Carawebs\Carawebs\Display\Contact::main_CTA(); ?>
         </div> -->
       </div>
     </div>

@@ -1,0 +1,84 @@
+.non-click-phone,
+a.click-phone,
+a.email {
+
+  background: transparent;
+  //color: #fff;
+  @extend .btn;
+  @extend .btn-default;
+  @extend .ghost;
+  border: solid 1px $dark-grey;
+
+  &:hover {
+
+    color: #fff;
+    background: $brand-primary;
+    border: solid 1px $dark-grey;
+
+  }
+
+}
+
+.light-text {
+
+  color: #fff;
+
+  a {
+
+    color: #fff;
+
+  }
+
+  .btn-default {
+
+    border-color: #fff;
+    background: transparent;
+
+  }
+
+  .non-click-phone,
+  a.click-phone,
+  a.email {
+
+    //background: transparent;
+    color: #fff;
+    // @extend .btn;
+    // @extend .btn-default;
+    // @extend .ghost;
+    border: solid 1px #fff;
+
+    &:hover {
+
+      color: #fff;
+      //background: $brand-primary;
+      border: solid 1px #fff;
+
+    }
+
+  }
+
+}
+
+.btn {
+
+  &:hover {
+
+    background: $brand-primary;
+    color: inherit;
+
+  }
+
+}
+
+.justified-social-container {
+
+  margin-left: -5px;
+  margin-right: -5px;
+
+  .social-sharing.btn-group-justified {
+
+    border-spacing: 5px;
+
+  }
+
+}

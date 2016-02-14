@@ -12,7 +12,7 @@ if ( ! empty( $section_style ) ) {
       <div class="text-center">
         <h2><?= $title; ?></h2>
         <div class="lead"><?= $content; ?></div>
-        <?= Carawebs\Carawebs\Display\Helpers::click_to_call( null, 'Call' ); ?>
+        <?= Carawebs\Carawebs\Display\Contact::click_to_call( null, 'Call' ); ?>
       </div>
     </div>
   </div>

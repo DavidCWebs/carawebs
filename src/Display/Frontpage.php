@@ -66,7 +66,7 @@ class Frontpage {
   public function the_call_to_action( $fieldname = 'call_to_action', $type = 'text' ) {
 
     //echo CTA::the_cta( $fieldname, $type );
-  echo Helpers::main_CTA();
+  echo Contact::main_CTA();
 
   }
 

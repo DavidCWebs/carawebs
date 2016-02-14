@@ -48,8 +48,8 @@ class Dynamic {
    */
   private function set_cta() {
 
-    //$this->cta = Helpers::main_CTA();
-    $this->cta = Helpers::click_to_call();
+    //$this->cta = Contact::main_CTA();
+    $this->cta = Contact::click_to_call();
 
   }
 

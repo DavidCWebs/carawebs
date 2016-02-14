@@ -19,7 +19,7 @@ $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 
   }
 
-  echo Carawebs\Carawebs\Display\Helpers::social_follow();
+  echo Carawebs\Carawebs\Display\Contact::social_follow();
   echo "<hr>";
 
   $posts_list->custom_loop( '3', true, '', '/partials/post-teaser.php' );
