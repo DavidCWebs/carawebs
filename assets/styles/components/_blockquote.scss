@@ -1,0 +1,34 @@
+blockquote {
+
+  footer {
+
+    font-family: $font-family-serif;
+    color: #e9e0e0;
+    font-style: normal;
+    padding-top: 10px;
+
+  }
+
+  border-left: none;
+  background: $blockquote-bg;
+  color: $blockquote-fg;
+  position: relative;
+  padding: 40px 40px 40px 40px;
+  font-style: italic;
+
+  &:before {
+
+    font-family: sans-serif;//$font-family-serif;
+    font-style: normal;
+    //content: "\f10d";
+    content: "\201C";
+    font-size: 70px;
+    line-height: 100px;
+    color: $blockquote-fg;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+
+  }
+
+}

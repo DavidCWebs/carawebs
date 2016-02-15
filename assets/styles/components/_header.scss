@@ -1,5 +1,37 @@
 .logged-in .navbar-fixed-top {
 
   margin-top: 30px;
+  font-size: inherit;
+  line-height: inherit;
+
+}
+
+.navbar-brand {
+
+  padding: 0;
+
+  img.logo,
+  .site-title {
+
+    display: inline-block;
+
+  }
+
+  .site-title {
+
+    font-size: 36px;
+    line-height: 36px;
+    //border: solid 1px red;
+    padding-top: 10px;
+    vertical-align: top;
+
+  }
+
+  img.logo {
+
+    margin-top: 10px;
+    vertical-align: top;
+
+  }
 
 }

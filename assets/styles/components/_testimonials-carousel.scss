@@ -1,0 +1,39 @@
+.section.light-text {
+
+  blockquote {
+
+  color: #fff;
+
+  }
+
+  #testimonials-carousel .carousel-control-wrap {
+
+    a .glyphicon {
+
+      color: #fff;
+
+    }
+
+  }
+
+}
+
+.section.dark-text blockquote {
+
+  blockquote {
+
+  color: $dark-grey;
+
+  }
+
+  #testimonials-carousel .carousel-control-wrap {
+
+    a .glyphicon {
+
+      color: $dark-grey;
+
+    }
+
+  }
+
+}

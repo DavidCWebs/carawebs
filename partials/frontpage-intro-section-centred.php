@@ -5,7 +5,7 @@ echo ! empty( $image_opacity ) ? $image_opacity : '<div class="opaque-layer">';
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-md-8 col-md-offset-2">
+      <div class="<?= $columns; ?>">
         <div class="text-center">
           <h2><?= $title; ?></h2>
           <div class="lead">

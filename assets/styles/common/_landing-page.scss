@@ -11,7 +11,7 @@
     color: #fff;
 
   }
-  
+
 }
 
 .full-width.light-text {
@@ -311,17 +311,19 @@
 
 }
 
-.intro {
-
-  margin-left: -15px;
-  margin-right: -15px;
-
-}
-
 .section {
 
   padding-top: 80px;
   padding-bottom: 80px;
+
+}
+
+.no-section-padding {
+
+  padding-top: 0;
+  padding-bottom: 0;
+
+  p img { margin-bottom: -14px; }
 
 }
 

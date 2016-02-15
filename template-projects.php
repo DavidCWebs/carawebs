@@ -18,7 +18,7 @@ $ids = $projects->project_IDs();
   </div>
   <?php $projects->projects_filter(); ?>
   <div id="mixitup-container" class="inline-container">
-    <?php $projects->the_projects( 6, true); ?>
+    <?php $projects->the_projects( -1, false ); ?>
     <div class="gap"></div>
     <div class="gap"></div>
   </div>

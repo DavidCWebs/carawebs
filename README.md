@@ -2,16 +2,39 @@
 [![Build Status](https://travis-ci.org/roots/sage.svg)](https://travis-ci.org/roots/sage)
 [![devDependency Status](https://david-dm.org/roots/sage/dev-status.svg)](https://david-dm.org/roots/sage#info=devDependencies)
 
-##Shortcodes
+## Shortcodes
 
-###Call to Action
+### Call to Action
 The shortcode is called with `[CTA]`. Accepts parameters:
 
 * `type="email" OR type="phone"` Defaults to "phone"
 * `text="Your Text"`: If a phone CTA, this will form the click-to-call instruction at small screen sizes. If email, the text constituting the email mailto: link.
 * `prefix="Your Prefix"`: If a phone CTA, the prefix for the number at large screen sizes.
 
-Sage is a WordPress starter theme based on HTML5 Boilerplate, gulp, Bower, and Bootstrap Sass, that will help you make better themes.
+## Responsive Breakpoints
+
+Defining values:
+~~~
+$screen-sm-min: 768px;
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-md-min: 992px;
+$screen-sm-max: ($screen-md-min - 1);
+$screen-lg-min: 1200px;
+$screen-md-max: ($screen-lg-min - 1);
+~~~
+
+Usage:
+~~~
+@media (max-width: $screen-xs-max) { ... }
+@media (min-width: $screen-sm-min) { ... }
+@media (max-width: $screen-sm-max) { ... }
+@media (min-width: $screen-md-min) { ... }
+@media (max-width: $screen-md-max) { ... }
+@media (min-width: $screen-lg-min) { ... }
+~~~
+
+## Sage
+TRhe starter theme is Sage. Sage is a WordPress starter theme based on HTML5 Boilerplate, gulp, Bower, and Bootstrap Sass, that will help you make better themes.
 
 * Source: [https://github.com/roots/sage](https://github.com/roots/sage)
 * Homepage: [https://roots.io/sage/](https://roots.io/sage/)
