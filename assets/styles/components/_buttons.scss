@@ -1,9 +1,9 @@
+.social-follow a,
 .non-click-phone,
 a.click-phone,
 a.email {
 
   background: transparent;
-  //color: #fff;
   @extend .btn;
   @extend .btn-default;
   @extend .ghost;
@@ -19,7 +19,10 @@ a.email {
 
 }
 
-.light-text {
+// All the areas on the site that require light coloured buttons
+// -----------------------------------------------------------------------------
+.light-text,
+.footer {
 
   color: #fff;
 
@@ -40,11 +43,7 @@ a.email {
   a.click-phone,
   a.email {
 
-    //background: transparent;
     color: #fff;
-    // @extend .btn;
-    // @extend .btn-default;
-    // @extend .ghost;
     border: solid 1px #fff;
 
     &:hover {

@@ -47,7 +47,7 @@ class Carousel {
         break;
 
       case 'basic':
-        include_once( get_template_directory() . '/partials/basic-carousel-2.php' );
+        include_once( get_template_directory() . '/partials/basic-carousel.php' );
         break;
 
       default:

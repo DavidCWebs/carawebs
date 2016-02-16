@@ -2,6 +2,13 @@
 
   h2 {
     margin-top: 0;
+
+    &.entry-title {
+
+      font-size: $font-size-h2*0.7;
+
+    }
+
   }
 
 }

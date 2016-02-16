@@ -88,6 +88,7 @@ class PostMeta extends \Carawebs\Carawebs\Fetch\Data {
         }
 
         $data[] = $row;
+        //$data[] = $output;
 
       }
 

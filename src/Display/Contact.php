@@ -55,7 +55,7 @@ class Contact {
    * @param  string  $heading An optional heading for this block
    * @return string           HTML for the social sharing buttonsAdd basic styles to buttons
    */
-  public static function share_this( $heading ) {
+  public static function share_this( $heading = null ) {
 
     ob_start();
 
@@ -192,13 +192,21 @@ class Contact {
 
   }
 
-  public static function social_follow() {
+  public static function social_follow( $format = 'inline' ) {
 
     $facebook = self::get_facebook();
     $twitter = self::get_twitter();
     $email = self::get_email();
 
-    include( get_template_directory() . '/partials/social-follow.php' );
+    if ( 'inline' === $format ) {
+
+      include( get_template_directory() . '/partials/social-follow.php' );
+
+    } elseif ( 'justified' === $format ) {
+
+      include( get_template_directory() . '/partials/social-follow-justified.php' );
+
+    }
 
   }
 

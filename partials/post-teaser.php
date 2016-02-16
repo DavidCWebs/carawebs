@@ -12,8 +12,8 @@
       </header>
       <div class="entry-summary">
         <?php //the_excerpt(); ?>
-        <?php echo wp_trim_words( get_the_excerpt(), $num_words = 30, $more = '…' ); ?>
-        <p><a href="<?php the_permalink(); ?>">Read More &raquo;</a></p>
+        <?php echo wp_trim_words( get_the_excerpt(), $num_words = 25, $more = '…' ); ?>
+        <p><a class="btn btn-default" href="<?php the_permalink(); ?>">Read More &raquo;</a></p>
       </div>
     </div>
   </div>

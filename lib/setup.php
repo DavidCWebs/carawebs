@@ -35,6 +35,7 @@ function setup() {
   // http://codex.wordpress.org/Function_Reference/set_post_thumbnail_size
   // http://codex.wordpress.org/Function_Reference/add_image_size
   add_theme_support('post-thumbnails');
+  add_image_size('w800', 800, 494, true);
 
   // Enable post formats
   // http://codex.wordpress.org/Post_Formats
@@ -91,9 +92,12 @@ function display_sidebar() {
     is_page_template('template-custom.php'),
     is_page_template( 'template-landing-page.php' ),
     is_page( 'projects' ),
+    //is_singular( 'project' ),
+    //is_page_template('template-blog.php'),
   ]);
 
   return apply_filters('sage/display_sidebar', $display);
+
 }
 
 /**

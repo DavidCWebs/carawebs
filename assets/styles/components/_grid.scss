@@ -30,6 +30,39 @@
 
 }
 
+// Change Layout for Projects
+// -----------------------------------------------------------------------------
+.single-project.sidebar-primary {
+
+  .main {
+
+    // No sidebar, `.main` is full width
+    // ---------------------------------------------------------------------------
+    @include make-sm-column(5);
+
+    // The body has the `.sidebar-primary` class - show sidebar
+    // ---------------------------------------------------------------------------
+    // .sidebar-primary & {
+    //
+    //   // `.main` is narrower by 1 columns, to give room for the offset
+    //   // -------------------------------------------------------------------------
+    //   @include make-sm-column( 6 );
+
+    //}
+
+  }
+
+  .sidebar {
+
+    // Set the width, then the offset, using Bootstrap mixins
+    // ---------------------------------------------------------------------------
+    @include make-sm-column( 6 );
+    @include make-sm-column-offset(1);
+
+  }
+
+}
+
 .row.no-gutters {
 
   margin-right: -10px;

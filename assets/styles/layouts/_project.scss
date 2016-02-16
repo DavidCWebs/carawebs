@@ -1,0 +1,67 @@
+.project-details {
+
+  font-size: $font-size-base * 0.8;
+
+  img {
+
+    padding: 20px;
+    background: grey;
+
+  }
+
+}
+
+//ul.project-our-work,
+//ul.project-links,
+ul.icon-list {
+
+  li {
+
+    position: relative;
+    padding: 0 0 5px 30px;
+    display: block;
+
+  }
+
+  li:before {
+
+    font-family: 'Glyphicons Halflings';
+    font-size: 18px;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    //color: blue;
+  }
+
+}
+
+ul.project-our-work {
+
+  li:before {
+
+    content:"\e136";
+
+  }
+
+}
+
+//'\e092'
+ul.project-links {
+
+  li:before {
+
+    content: "\e092";
+
+  }
+
+}
+
+ul.project-features {
+
+  li:before {
+
+    content:"\e013";
+
+  }
+
+}
