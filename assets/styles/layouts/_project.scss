@@ -1,11 +1,26 @@
 .project-details {
 
-  font-size: $font-size-base * 0.8;
+  // font-size: $font-size-base * 0.8;
+  // background-color: lighten($grey,20%);
+  // color: #fff;
+  // padding: 40px;
 
   img {
 
-    padding: 20px;
-    background: grey;
+    // padding: 20px;
+    // background: grey;
+
+  }
+
+}
+
+.single-project {
+
+  .sidebar {
+
+    padding-top: $padding-base-vertical;
+
+    background: $grey-lighter;
 
   }
 
@@ -50,7 +65,7 @@ ul.project-links {
 
   li:before {
 
-    content: "\e092";
+    content:"\e144";
 
   }
 
