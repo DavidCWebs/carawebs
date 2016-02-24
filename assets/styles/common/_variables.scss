@@ -89,6 +89,8 @@ $body-bg:               #fff !default;
 //** Global text color on `<body>`.
 $text-color:            $grey !default;
 
+$carousel-background: $body-bg;
+
 //** Global textual link color.
 $link-color:            $brand-primary !default;
 //** Link hover color set via `darken()` function.

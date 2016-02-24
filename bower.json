@@ -8,9 +8,16 @@
   "private": true,
   "dependencies": {
     "bootstrap-sass": "3.3.6",
-    "mixitup": "^2.1.11"
+    "mixitup": "^2.1.11",
+    "font-awesome": "~4.5.0"
   },
   "overrides": {
+    "font-awesome": {
+      "main": [
+        "./scss/font-awesome.scss",
+        "./fonts/*"
+      ]
+    },
     "bootstrap-sass": {
       "main": [
         "./assets/stylesheets/_bootstrap.scss",
